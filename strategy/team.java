@@ -2,10 +2,14 @@ package strategy;
 
 import java.util.ArrayList;
 
-public class team {
+public class Team {
     private String teamName;
 	private ArrayList<Player> players;
-}
+
+public Team(String teamName) {
+		this.teamName = teamName;
+		this.players = new ArrayList<Player>();
+	}
 
 public void addTeamMember(String firstName, String lastName, PlayerType playerType) {
 		if (playerType == PlayerType.GOALIE) {
@@ -17,7 +21,7 @@ public void addTeamMember(String firstName, String lastName, PlayerType playerTy
 		}
 	}
  
-	public void executePlay(PlayerType playerType) {
+public void executePlay(PlayerType playerType) {
 		for (Player player : players) {
 			if (player.getPlayerType() == playerType) {
 				System.out.println(player.play());
