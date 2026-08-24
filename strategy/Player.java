@@ -1,5 +1,7 @@
 package strategy;
 
+import java.util.Random;
+
 public class Player {
     private String firstName;
     private String lastName;
@@ -24,11 +26,13 @@ public Player(String firstName, String lastName, Behavior behavior, PlayerType p
         return lastName;
     }
 
+    public String getplayerType(){
+        return playerType;
+    }    
+
+
     public Behavior getBehavior() {
         return behavior;
     }
 
-    public PlayerType getPlayerType() {
-        return playerType;
-    }
 }
