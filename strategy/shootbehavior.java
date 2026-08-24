@@ -7,7 +7,7 @@ public class ShootBehavior implements Behavior {
  
 	@Override
 	public String play() {
-		return "Shoots at the Goal!!!\n"
+		return "Shoots at the Goal!\n"
 			+ "   o                 |\\\n"
 			+ BLUE + " -|-\\                | \\\n" + RESET
 			+ " / \\ \\_       .      |  \\\n";
