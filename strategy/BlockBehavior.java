@@ -7,7 +7,7 @@ public class BlockBehavior implements Behavior {
  
 	@Override
 	public String play() {
-		return "Blocks his opponent!!!\n"
+		return "Blocks his opponent!\n"
 			+ "            o        o\n"
 			+ RED + "          /-|-     -|-\\\n" + RESET
 			+ "   .      _// \\     _/ / \\\n";

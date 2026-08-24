@@ -7,7 +7,7 @@ public class BlockGoalBehavior implements Behavior {
  
 	@Override
 	public String play() {
-		return "Blocks the goal!!!\n"
+		return "Blocks the goal!\n"
 			+ "        o\n"
 			+ RED + "      \\ | /\n" + RESET
 			+ "       _/ \\_\n";
