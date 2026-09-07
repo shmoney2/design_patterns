@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class FileReader {
     public static ArrayList<String> getLines(String fileName) {
         ArrayList<String> lines = new ArrayList<String>();
-
         try {
             File file = new File(fileName);
             Scanner reader = new Scanner(file);
@@ -21,7 +20,7 @@ public class FileReader {
             System.out.println("Error reading file.");
             e.printStackTrace();
         }
-
+//
         return lines;
     }
 }

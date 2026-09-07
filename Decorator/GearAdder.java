@@ -1,12 +1,15 @@
 package decorator;
 
+import java.util.ArrayList;
+
 public abstract class GearAdder extends Player {
 // Constructor to initialize the GearAdder with a player and gear.
     public GearAdder(Player player, ArrayList<String> gear) {
         super(new ArrayList<String>(player.character), player.getName());
         addGear(gear);
+  
     }
-
+// Method to add gear to the player's character representation.
     protected void addGear(ArrayList<String> gear) {
         for (int i = 0; i < gear.size(); i++) {
             String gearLine = gear.get(i);
@@ -26,6 +29,7 @@ public abstract class GearAdder extends Player {
                     base.setCharAt(j, c);
                 }
             }
+// Update the character line with the new gear
             character.set(i, base.toString());
         }
     }
