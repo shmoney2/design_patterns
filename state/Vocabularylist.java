@@ -1,6 +1,6 @@
 package state;
 
-public class Vocabularylist {
+public class VocabularyList {
     private State state;
     private FirstGradeState firstGradeState;
     private SecondGradeState secondGradeState;

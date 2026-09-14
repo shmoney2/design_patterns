@@ -8,12 +8,12 @@ public class SecondGradeState extends State {
     }
  
     public void increaseGrade() {
-        System.out.println("Moving up to third grade.");
+        System.out.println("Moving up to third grade...");
         vocabularyList.setState(vocabularyList.getThirdGradeState());
     }
  
     public void decreaseGrade() {
-        System.out.println("Moving back to first grade.");
+        System.out.println("Moving back to first grade...");
         vocabularyList.setState(vocabularyList.getFirstGradeState());
     }
 }
