@@ -1,5 +1,8 @@
 package state;
-
+/**
+ * This is a  utility class for reading vocab words form the files that we have done
+ * @author Sahil
+ */
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.HashMap;
@@ -8,7 +11,9 @@ import java.util.Scanner;
 public class FileReader {
     public static HashMap<String, String> getWords(String fileName) {
         HashMap<String, String> words = new HashMap<String, String>();
-
+        /*
+         * Reads words from a file and returns them as a HashMap.
+         */
         try {
             File file = new File(fileName);
             Scanner reader = new Scanner(file);
