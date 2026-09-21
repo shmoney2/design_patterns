@@ -1,7 +1,10 @@
 package state;
- 
+ /**
+  * Represents the second grade state in the vocabulary list.
+  * @author Sahil
+  */
 public class SecondGradeState extends State {
- 
+ //exact same implementation of the firstgrade status with the only difference being that it runs the second txt file to get the words for the second grade state.
     public SecondGradeState(VocabularyList vocabularyList) {
         super(vocabularyList);
         this.words = FileReader.getWords("state/txt/second.txt");

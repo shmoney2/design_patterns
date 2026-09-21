@@ -29,7 +29,9 @@ public class FileReader {
             System.out.println("Error reading file.");
             e.printStackTrace();
         }
-
+        /*
+         @return a HashMap containing the words read from the file.
+         */
         return words;
     }
 }

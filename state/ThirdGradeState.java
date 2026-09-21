@@ -1,5 +1,9 @@
 package state;
- 
+ /**
+  * Represents the third grade state in the vocabulary list.
+  * @author Sahil
+  */
+ //exact same implementation of the firstgrade status with the only difference being that it runs the third txt file to get the words for the third grade state.
 public class ThirdGradeState extends State {
  
     public ThirdGradeState(VocabularyList vocabularyList) {
