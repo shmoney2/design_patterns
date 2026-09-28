@@ -9,7 +9,9 @@ public enum Difficulty {
     EASY("\u001B[33m"), MEDIUM("\u001B[32m"), HARD("\u001B[31m");
 
     public String ASCII;
-
+/*
+@returns the ASCII color code associated with the difficulty level.
+ */
     private Difficulty(String ascii) {
         this.ASCII = ascii;
     }
